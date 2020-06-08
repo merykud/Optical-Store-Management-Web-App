@@ -1,0 +1,92 @@
+
+#bd{
+    zIndex: 1;
+    position: relative;
+}
+#formStyle{
+
+    margin-top: 1%;
+    opacity: 1;
+
+}
+
+#buttonStyle{
+    margin-top: 2%;
+
+
+}
+#linkStyle{
+
+    margin-top: 1.5%;
+}
+
+#inline{
+    display: inline-block;
+    margin-top: 1%;
+    margin-bottom: 2%;
+
+}
+#inline_date{
+    display: inline-block;
+    width: 80px;
+
+}
+#ui input focus{
+    display: inline-block;
+    margin-left: 80px;
+}
+#inline_date_sec{
+    display: inline-block;
+    width: 80px;
+    margin-left: 120px;
+}
+#inline_date_b{
+    display: inline-block;
+    margin-left: 140px;
+}
+
+h1{
+    font-family:Lato;
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+}
+
+h2{
+    font-family:Lato;
+    color: steelblue;
+
+}
+#title_box{
+    background-color: steelblue;
+    padding: 16px;
+    margin-bottom: 30px;
+    margin-top: 22px;
+    border-radius: 7px;
+
+
+}
+#transaction_button{
+    margin-top:35px;
+    margin-left: 650px;
+
+}
+
+#customer_input{
+    width: 200px;
+    margin-left: 50px;
+}
+#customers_search_button{
+    margin-left: 200px;
+}
+#add_button{
+    margin-left: 780px;
+    margin-top: 30px;
+}
+#balance_button{
+    margin-top: 23px;
+    margin-left: 130px;
+}
+#total{
+    background-color: steelblue;
+}

@@ -1,6 +1,9 @@
 import React from "react";
 import Background from "../Images/back1.jpg"
 import Logo_div from "../Logo/Logo_div";
+import history from "../history";
+import "../Stylesh.css";
+
 import {
     BrowserRouter as Router,
     Route,
@@ -10,45 +13,22 @@ import {
 }from "react-router-dom";
 
 class Login extends React.Component{
+
+
     render() {
 
         const myStyle = {
             backgroundImage: `url(${Background})`,
-            textAlign: "center",
             width: '100%',
             height: '100%',
-            position: "absolute",
-            minHeight: "100%",
-            minWidth: "100%",
+            position: "fixed",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.3,
-            zIndex: -1
+            opacity: 0.35,
+            zIndex: -1,
+        }
 
-        }
-        const bd = {
-            zIndex: 1,
-            position: "relative"
-        }
-        const formStyle = {
 
-            padding: "fixed",
-            margin: "fixed",
-            marginTop: "10px",
-            opacity: 1
-        }
-        const inputStyle = {
-            paddingTop: "15px"
-        }
-        const buttonStyle = {
-            margin: "fixed",
-            marginTop: "2.5%",
-            zIndex: "2000"
-        }
-        const linkStyle={
-            margin:"fixed",
-            marginTop: "2%"
-        }
         return (
 
             <div id="root">
@@ -73,18 +53,18 @@ class Login extends React.Component{
                                     <Logo_div/>
                                     <div className="pt2">
 
-                                        <form style={formStyle} className="main-form" method="post">
+                                        <form  className="main-form"  id="formStyle" method="post">
                                             <div className="input-box">
-                                                <div style={formStyle} className="ui left icon input">
-                                                    <input style={inputStyle} type="text"
+                                                <div className="ui left icon input" id="formStyle">
+                                                    <input type="text" id="formStyle"
                                                            placeholder="Username"></input>
                                                     <i className="user icon"></i>
                                                 </div>
                                             </div>
 
-                                            <div style={formStyle} className="input-box">
+                                            <div className="input-box" id="formStyle">
                                                 <div className="ui left icon input">
-                                                    <input style={inputStyle} type="password"
+                                                    <input  type="password" id="inputStyle"
                                                            placeholder="Password"></input>
                                                     <i className="lock icon"></i>
                                                 </div>
@@ -95,7 +75,8 @@ class Login extends React.Component{
                                     </div>
 
                                     <div className="pt3">
-                                        <button style={buttonStyle} className="ui inverted primary button">
+                                        <button className="ui inverted primary button" id="buttonStyle"
+                                                onClick={() => history.push('/home')}>
                                             Log In
                                         </button>
                                     </div>
@@ -103,7 +84,8 @@ class Login extends React.Component{
                                     <div className="pt4">
 
                                         <div className="sign-up">
-                                            <p style={linkStyle} className="signup-par"> Don't have an account?
+                                            <p className="signup-par" id="linkStyle"> Don't have an account?
+
                                                 <Link to="/signup"> Sign Up </Link>
                                             </p>
                                         </div>
@@ -117,9 +99,7 @@ class Login extends React.Component{
                 </div>
 
 
-                <div id="footer">
-                    <center></center>
-                </div>
+
 
 
             </div>
